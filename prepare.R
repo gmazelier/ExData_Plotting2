@@ -1,4 +1,5 @@
 ## This utility script will fetch the required data.
+## Usage: data <- getData()
 
 fetchData <- function(src, dst) {
     res <- length(Filter(file.exists, dst))
@@ -17,4 +18,10 @@ getData <- function() {
     src <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip"
     dst <- c("summarySCC_PM25.rds", "Source_Classification_Code.rds")
     fetchData(src, dst)
+
+    data <- lapply(dst, readRDS)
+    data.names <- c("NEI", "SCC")
+    names(data) <- data.names
+
+    data
 }
