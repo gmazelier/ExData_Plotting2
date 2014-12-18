@@ -22,9 +22,9 @@ png("plot1.png", width = 480, height = 480)
 options(scipen = 999)
 plot(
     emissions,
-    main = "Total emissions in the United States from 1999 to 2008", 
+    main = "Total emissions in the United States from 1999 to 2008",
     xlab = "Year",
-    ylab = "Total emissions",
+    ylab = "Emissions",
     type = "o",
     pch = 16, # full circle
     col = "red",
