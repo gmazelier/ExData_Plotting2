@@ -19,6 +19,7 @@ emissions <- aggregate(
 
 ## Create chart
 png("plot1.png", width = 480, height = 480)
+options(scipen = 999)
 plot(
     emissions,
     main = "Total emissions in the United States from 1999 to 2008", 
