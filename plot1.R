@@ -25,8 +25,10 @@ plot(
     main = "Total emissions in the United States from 1999 to 2008", 
     xlab = "Year",
     ylab = "Total emissions",
-    type = "b",
-    col = "red"
+    type = "o",
+    pch = 16, # full circle
+    col = "red",
+    bg = "red"
 )
 dev.off()
 
