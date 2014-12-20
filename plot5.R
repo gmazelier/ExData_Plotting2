@@ -32,7 +32,7 @@ plot(
     emissions,
     main = "Motor vehicle emissions in Baltimore City (Maryland)\nfrom 1999 to 2008", 
     xlab = "Year",
-    ylab = "Emissions",
+    ylab = "Emissions (tons)",
     type = "o",
     pch = 16, # full circle
     col = "violet",

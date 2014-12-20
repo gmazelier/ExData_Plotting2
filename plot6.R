@@ -54,7 +54,7 @@ ggplot(emissions, aes(factor(Year), Emissions, fill = City)) +
         )
     ) +
     xlab("Year") +
-    ylab("Emissions") +
+    ylab("Emissions (tons)") +
     scale_fill_discrete(name = "Year") +
     theme_bw() +
     theme(plot.title = element_text(face = "bold", vjust = 3)) +

@@ -26,14 +26,6 @@ names(emissions) <- c("Type", "Year", "Emissions")
 
 ## Create chart
 png("plot3.png", width = 480, height = 480)
-# plot(
-#     emissions,
-#     main = "Total emissions in Baltimore City (Maryland) from 1999 to 2008", 
-#     xlab = "Year",
-#     ylab = "Total emissions",
-#     type = "b",
-#     col = "blue"
-# )
 ggplot(emissions, aes(Year, Emissions, group = Type, colour = Type)) +
     scale_colour_discrete(
         name = "Type",
@@ -42,7 +34,7 @@ ggplot(emissions, aes(Year, Emissions, group = Type, colour = Type)) +
     ) +
     ggtitle("Emissions/type in Baltimore City (Maryland) from 1999 to 2008") +
     xlab("Year") +
-    ylab("Emissions") +
+    ylab("Emissions (tons)") +
     theme_bw() +
     theme(plot.title = element_text(face = "bold", vjust = 3)) +
     theme(plot.margin = unit(c(1, 0.25, 0.25, 0.25), "cm")) +
